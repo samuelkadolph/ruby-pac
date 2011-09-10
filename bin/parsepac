@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+if ARGV.size < 2
+  puts "usage: parsepac pac-url-or-file url-to-test"
+  exit 1
+else
+  require "pac"
+  puts PAC.load(ARGV.shift).find(ARGV.shift)
+  exit 0
+end
