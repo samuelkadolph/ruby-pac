@@ -37,9 +37,9 @@ After installing the `pac` gem you must install a JavaScript runtime. Compatible
 ### Command Line
 
 ```
-parsepac https://github.com/downloads/samuelkadolph/ruby-pac/sample.pac https://github.com # => "PROXY proxy:8080"
-parsepac https://github.com/downloads/samuelkadolph/ruby-pac/sample.pac http://ruby-lang.com # => "PROXY proxy:8080; DIRECT"
-parsepac https://github.com/downloads/samuelkadolph/ruby-pac/sample.pac http://samuel.kadolph.com # => "DIRECT"
+parsepac http://cloud.github.com/downloads/samuelkadolph/ruby-pac/sample.pac https://github.com
+parsepac http://cloud.github.com/downloads/samuelkadolph/ruby-pac/sample.pac http://ruby-lang.com
+parsepac http://cloud.github.com/downloads/samuelkadolph/ruby-pac/sample.pac http://samuel.kadolph.com
 ```
 
 ### Ruby
