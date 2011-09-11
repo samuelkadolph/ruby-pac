@@ -48,7 +48,7 @@ parsepac http://cloud.github.com/downloads/samuelkadolph/ruby-pac/sample.pac htt
 require "rubygems"
 require "pac"
 
-pac = PAC.load("https://github.com/downloads/samuelkadolph/ruby-pac/sample.pac")
+pac = PAC.load("http://cloud.github.com/downloads/samuelkadolph/ruby-pac/sample.pac")
 pac.find("https://github.com") # => "PROXY proxy:8080"
 pac.find("http://ruby-lang.com") # => "PROXY proxy:8080; DIRECT"
 pac.find("http://samuel.kadolph.com") # => "DIRECT"
